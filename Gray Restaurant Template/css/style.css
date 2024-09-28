@@ -1,0 +1,341 @@
+/* 
+1. Main Menu
+2. Icons
+3. Call Button 
+4. Footer Template
+5. Misc (or to use in other projects as well)
+*/
+
+/* Universal */
+
+body {
+  background: rgb(255,214,214);
+  background: linear-gradient(329deg, rgba(255,214,214,1) 0%, rgba(254,255,225,1) 100%); 
+}
+/* 1. Main Menu */
+
+.resto_app_map {
+    padding: 5rem 0;
+  }
+
+  #storeTitle {
+    margin: 0 auto;
+    max-width: 100%;
+    max-height: 100%;
+    display: block;
+    border-width: 10px;
+    border-style: solid;
+    border-image: linear-gradient(329deg, rgba(255,0,0,1) 0%, rgba(246,255,0,1) 100%) 1;
+    margin-top: 2vh;
+  }
+
+  #itemHeader {
+    text-align: center;
+    font-family: 'Trirong', arial; 
+    border-style: none;
+    font-size: 45px;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+
+  }
+  
+  .app_menu_title {
+    font-family: Poppins;
+    font-weight: 300;
+    font-size: 18px;
+    color: #333333;
+    line-height: 1.4;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+  
+  .price_app {
+    font-size: 28px;
+    font-weight: 400;
+  }
+  
+  .lines {
+    flex-grow: 1;
+    height: 2px;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-bottom: 0.7rem;
+  }
+  
+  .ingredients_app {
+    font-weight: 400;
+    font-size: 15px;
+    color: #666666;
+    line-height: 1.7;
+  }
+  
+  .app_menu_item {
+    transition: all 0.6s;
+    margin-bottom: 2rem;
+  }
+  
+  .menu_item_title {
+    color: #222222;
+    letter-spacing: 3px;
+    font-size: 30px;
+    font-weight: 700;
+    position: relative;
+    z-index: 10;
+    text-transform: uppercase;
+    line-height: 80px;
+  }
+  
+  .icone_app {
+    width: 30px;
+    margin-right: 0.5rem;
+  }
+
+
+  /* Resize the headers to make them different sizes on smaller screens */
+  /* Was not able to determine how to do this through Bootstrap Studio */
+  @media screen and (max-width: 415px)  {
+    #sectionHeader { 
+        font-size: 55px;
+    }
+  }
+  @media screen and (min-width: 416px) {
+    #sectionHeader {
+        font-size: 82px;
+    }
+  }
+  
+
+/* 2. Icons */
+.bs-icon {
+    --bs-icon-size: .75rem;
+    display: flex;
+    flex-shrink: 0;
+    justify-content: center;
+    align-items: center;
+    font-size: var(--bs-icon-size);
+    width: calc(var(--bs-icon-size) * 2);
+    height: calc(var(--bs-icon-size) * 2);
+    color: var(--bs-primary);
+  }
+  
+  .bs-icon-xs {
+    --bs-icon-size: 1rem;
+    width: calc(var(--bs-icon-size) * 1.5);
+    height: calc(var(--bs-icon-size) * 1.5);
+  }
+  
+  .bs-icon-sm {
+    --bs-icon-size: 1rem;
+  }
+  
+  .bs-icon-md {
+    --bs-icon-size: 1.5rem;
+  }
+  
+  .bs-icon-lg {
+    --bs-icon-size: 2rem;
+  }
+  
+  .bs-icon-xl {
+    --bs-icon-size: 2.5rem;
+  }
+  
+  .bs-icon.bs-icon-primary {
+    color: var(--bs-white);
+    background: var(--bs-primary);
+  }
+  
+  .bs-icon.bs-icon-primary-light {
+    color: var(--bs-primary);
+    background: rgba(var(--bs-primary-rgb), .2);
+  }
+  
+  .bs-icon.bs-icon-semi-white {
+    color: var(--bs-primary);
+    background: rgba(255, 255, 255, .5);
+  }
+  
+  .bs-icon.bs-icon-rounded {
+    border-radius: .5rem;
+  }
+  
+  .bs-icon.bs-icon-circle {
+    border-radius: 50%;
+  }
+
+  /* 3. Call Us Button */
+  .highlight-clean {
+    color: #313437;
+    background-color: #fff;
+    padding: 50px 0;
+  }
+  
+  .highlight-clean p {
+    color: #7d8285;
+  }
+  
+  .highlight-clean .intro {
+    font-size: 16px;
+    max-width: 500px;
+    margin: 0 auto 25px;
+  }
+  
+  .highlight-clean .buttons {
+    text-align: center;
+  }
+  
+  .highlight-clean .buttons .btn {
+    padding: 16px 32px;
+    margin: 6px;
+    border: none;
+    background: none;
+    box-shadow: none;
+    text-shadow: none;
+    opacity: 0.9;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 13px;
+    letter-spacing: 0.4px;
+    line-height: 1;
+    outline: none;
+    background-color: #ddd;
+  }
+  
+  .highlight-clean .buttons .btn:hover {
+    opacity: 1;
+  }
+  
+  .highlight-clean .buttons .btn:active {
+    transform: translateY(1px);
+  }
+  
+  .highlight-clean .buttons .btn-primary {
+    background-color: #055ada;
+    color: #fff;
+  }
+    
+
+  /* 4. Footer Template */
+
+  footer {
+    background-color: #292c2f;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+    box-sizing: border-box;
+    width: 100%;
+    text-align: left;
+    font: bold 16px sans-serif;
+    padding: 55px 50px;
+    margin-top: 80px;
+    bottom: 0;
+    color: #fff;
+  }
+  
+  .footer-navigation h3 {
+    margin: 0;
+    font: normal 36px Cookie, cursive;
+    margin-bottom: 20px;
+    color: #fff;
+  }
+  
+  .footer-navigation h3 a {
+    text-decoration: none;
+    color: #fff;
+  }
+  
+  .footer-navigation h3 span {
+    color: #5383d3;
+  }
+  
+  .footer-navigation p.links a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .footer-navigation p.company-name {
+    color: #8f9296;
+    font-size: 14px;
+    font-weight: normal;
+    margin-top: 20px;
+  }
+  
+  @media (max-width:767px) {
+    .footer-contacts {
+      margin: 30px 0;
+    }
+  }
+  
+  .footer-contacts p {
+    display: inline-block;
+    color: #ffffff;
+    vertical-align: middle;
+  }
+  
+  .footer-contacts p a {
+    color: #5383d3;
+    text-decoration: none;
+  }
+  
+  .fa.footer-contacts-icon {
+    background-color: #33383b;
+    color: #fff;
+    font-size: 18px;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 38px;
+    margin: 10px 15px 10px 0;
+  }
+  
+  span.new-line-span {
+    display: block;
+    font-weight: normal;
+    display: block;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 2;
+  }
+  
+  .footer-about h4 {
+    display: block;
+    color: #fff;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .footer-about p {
+    line-height: 20px;
+    color: #92999f;
+    font-size: 13px;
+    font-weight: normal;
+    margin: 0;
+  }
+  
+  div.social-links {
+    margin-top: 20px;
+    color: #fff;
+  }
+  
+  .social-links a {
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    background-color: #33383b;
+    border-radius: 2px;
+    font-size: 20px;
+    color: #ffffff;
+    text-align: center;
+    line-height: 35px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+  }
+  
+  /* 5. Misc */
+  
+    /* Mouse Hover - Keep this for future reference */
+  /* .app_menu_item:hover h3 {
+    transition: all 0.6s;
+    color: #f44336;
+  } */
